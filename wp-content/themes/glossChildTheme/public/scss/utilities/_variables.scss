@@ -1,0 +1,46 @@
+// ============================================================================
+// Site defaults
+// ============================================================================
+
+// Base font size
+// this will affect all 'rem' and 'em' based units
+// need to be declared in root 'html'
+$base-font: 16px !default;
+$font-size-base: $base-font !default; // fallback for bootstrap variable
+
+// Fonts
+$font-primary: 'Roboto', sans-serif;
+
+// Breakpoints
+$breakpoints: (
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px,
+    'xxl': 1440px,
+    'xxxl': 1920px
+) !default;
+
+// Initial Colors
+$color1: #707070 !default;
+$color2: #7E7E7E !default;
+$color3: #202020!default;
+$color4: #D70646 !default;
+
+// Text Colors
+$text-grey: $color1;
+$text-lgrey-1: $color2;
+$text-dgrey-1: $color3;
+$text-accent: $color4;
+
+// Bg Colors
+$bg-grey: $color1;
+$bg-lgrey-1: $color2;
+$bg-dgrey-1: $color3;
+$bg-accent: $color4;
+
+// Border Colors
+$border-grey: $color1;
+$border-lgrey-1: $color2;
+$border-dgrey-1: $color3;
+$border-accent: $color4;

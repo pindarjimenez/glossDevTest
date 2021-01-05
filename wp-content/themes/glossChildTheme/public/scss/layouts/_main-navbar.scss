@@ -1,0 +1,152 @@
+// ============================================================================
+// Main Header
+// ============================================================================
+
+.main-navbar {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__brand {
+        color: $black;
+        font-weight: 600;
+        font-size: pxToRem(30px);
+
+        @include media-breakpoint-up(md) {
+            font-size: pxToRem(35px);
+        }
+    }
+
+    &__toggle {
+        border: 0;
+        background-color: transparent;
+        outline: none;
+        border: 0;
+        background-image: none;
+        text-align: center;
+        white-space: nowrap;
+        touch-action: manipulation;
+        user-select: none;
+        padding-right: 0;
+        cursor: pointer;
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            outline: 0;
+        }
+
+        & .icon {
+            position: relative;
+            margin-top: 8px;
+            margin-bottom: 8px;
+
+            &,
+            &:before,
+            &:after {
+                display: block;
+                width: 24px;
+                height: 3px;
+                transition: background-color 0.3s linear, transform 0.3s linear;
+                background-color: $bg-accent;
+            }
+
+            &:before,
+            &:after {
+                position: absolute;
+                content: "";
+            }
+
+            &:before {
+                top: -8px;
+            }
+
+            &:after {
+                top: 8px;
+            }
+        }
+
+        &.-active > .icon {
+            background-color: transparent;
+
+            &:before {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            &:after {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    }
+
+    &__list {
+        display: none;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+
+        &.-on {
+            display: block;
+            position: absolute;
+            top: 60px;
+        }
+        
+        ul {
+            margin: 0;
+            list-style: none;
+
+            @include media-breakpoint-up(lg) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        li {
+            margin: 0;
+            padding: 0.5em 0;
+
+            @include media-breakpoint-up(lg) {
+                margin: 0 20px;
+            }
+
+            a {
+                color: $text-grey;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    text-decoration: none;
+                    color: $text-lgrey-1;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                a {
+                    color: $text-accent;
+                    border: 0.13rem solid $border-accent;
+                    border-radius: 3px;
+                    font-weight: 600;
+                    padding: 0.5em 2em;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background-color: $bg-accent;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

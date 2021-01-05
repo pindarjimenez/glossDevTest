@@ -1,0 +1,48 @@
+// ============================================================================
+// Buttons
+// ============================================================================
+
+.button {
+    background-color: transparent;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: $font-primary;
+    font-size: pxToRem(16px);
+    overflow: hidden;
+    padding: 0.8em 2.5em;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 400;
+
+    @include media-breakpoint-up(lg) {
+        font-size: pxToRem(18px);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        outline: 0;
+    }
+}
+
+// Mixin
+@mixin btnPrimary($bg, $color) {
+    background-color: $bg !important;
+    color: $color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: lighten($bg, 5%) !important;
+    }
+}
+
+.button {
+    &-1 {
+        @include btnPrimary($bg-accent, $white);
+    }
+}

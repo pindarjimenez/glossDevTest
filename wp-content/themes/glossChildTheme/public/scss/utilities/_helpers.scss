@@ -1,0 +1,12 @@
+// ============================================================================
+// Helpers
+// ============================================================================
+
+.content-centered {
+    @include media-breakpoint-up(lg) {
+        min-height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}

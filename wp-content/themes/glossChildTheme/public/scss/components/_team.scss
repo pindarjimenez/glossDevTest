@@ -1,0 +1,67 @@
+// ============================================================================
+// Team
+// ============================================================================
+
+.team {
+    @include media-breakpoint-up(sm) {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    @include media-breakpoint-up(md) {
+        max-width: 720px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        max-width: none;
+    }
+
+    &__container {
+        background-color: $bg-dgrey-1;
+    }
+
+    &__container,
+    &__figure {
+        @include media-breakpoint-up(lg) {
+            min-height: 450px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-height: 550px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            max-height: 550px;
+        }
+    }
+
+    &__figure {
+        margin: 0;
+        height: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        padding: 1em;
+        @include media-breakpoint-up(lg) {
+            max-width: 405px;
+            margin: 0 auto;
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-width: 522px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            max-width: 585px;
+        }
+    }
+}
