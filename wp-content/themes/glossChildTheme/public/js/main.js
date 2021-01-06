@@ -1,6 +1,6 @@
 try {
 	window.Popper = require('popper.js').default;
-	window.$ = window.jQuery = require('jquery');
+	window.$ = window.jQuery = require( "jquery" );
 
 	require('bootstrap');
 } catch (e) { }
@@ -9,7 +9,7 @@ try {
 //	document.ready
 //	Will fire immediately when DOM is ready
 // ============================================================================
-$(document).ready(function () {
+$(function () {
 
 	// ==========================================================================
 	// 
@@ -32,7 +32,6 @@ $(document).ready(function () {
 		  var triggerEl = getTriggerElement(event.target);
 		  // If trigger element does not exist
 		  if (triggerEl === undefined) {
-			event.preventDefault();
 			return false;
 		  }
 	  

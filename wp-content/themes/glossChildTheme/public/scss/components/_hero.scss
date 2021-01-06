@@ -1,0 +1,40 @@
+// ============================================================================
+// Hero
+// ============================================================================
+
+.hero {
+    background: {
+        repeat: no-repeat;
+        size: cover;
+        color: rgba($black, 1);
+    };
+    position: relative;
+    top: 80px;
+    
+    @include media-breakpoint-up(lg) {
+        min-height: 650px;
+        padding: 2em 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: initial;
+    }
+
+    &__description {
+        color: $white;
+        font-size: pxToRem(25px);
+        font-weight: 300;
+        
+        @include media-breakpoint-up(lg) {
+            margin: 1.5em 0;
+        }
+    }
+
+    .button-1 {
+        font-size: pxToRem(20px);
+
+        @include media-breakpoint-up(lg) {
+            font-size: pxToRem(30px);
+        }
+    }
+}

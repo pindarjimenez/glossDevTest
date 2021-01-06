@@ -2,7 +2,7 @@
 
     <!-- start main-footer -->
     <footer class="main-footer">
-        <div class="text-center">&copy; Copyright 2019. Logo.</div>
+        <p class="text-center">&copy; Copyright 2019. Logo.</p>
     </footer>
     <!-- /.end main-footer -->
 </div>

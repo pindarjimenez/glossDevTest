@@ -32,5 +32,4 @@ function main_scripts()
     wp_enqueue_script('main');
 }
 add_action('wp_enqueue_scripts', 'main_scripts');
-
 ?>

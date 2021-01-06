@@ -38,11 +38,17 @@
     &:focus,
     &:active {
         background-color: lighten($bg, 5%) !important;
+        color: $white;
     }
 }
 
 .button {
     &-1 {
         @include btnPrimary($bg-accent, $white);
+    }
+
+    &-2 {
+        @include btnPrimary($bg-accent, $white);
+        border: 1px solid $white;
     }
 }

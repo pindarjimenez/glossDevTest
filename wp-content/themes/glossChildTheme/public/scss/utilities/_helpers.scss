@@ -10,3 +10,11 @@
         align-items: center;
     }
 }
+
+.no-underline {
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+}

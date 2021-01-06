@@ -44,7 +44,7 @@
 
 @import "layouts/header";
 @import "layouts/main-navbar";
-// @import "layouts/footer";
+@import "layouts/footer";
 
 
 // ============================================================================
@@ -52,7 +52,9 @@
 // ============================================================================
 
 @import "components/buttons";
+@import "components/hero";
 @import "components/team";
+@import "components/newsletter";
 
 
 // ============================================================================

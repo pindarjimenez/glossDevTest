@@ -18077,7 +18077,7 @@ try {
 // ============================================================================
 
 
-$(document).ready(function () {
+$(function () {
   // ==========================================================================
   // 
   // ==========================================================================
@@ -18099,7 +18099,6 @@ $(document).ready(function () {
       var triggerEl = getTriggerElement(event.target); // If trigger element does not exist
 
       if (triggerEl === undefined) {
-        event.preventDefault();
         return false;
       } // If the target element exists
 

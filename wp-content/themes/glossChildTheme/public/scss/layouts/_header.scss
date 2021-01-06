@@ -3,6 +3,29 @@
 // ============================================================================
 
 .main-header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+    z-index: 100;
+
+    @include media-breakpoint-up(lg) {
+        height: 110px;
+        position: initial;
+    }
+
+    &__top {
+        @include media-breakpoint-up(sm) {
+            padding: 0 2em;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            padding: 0;
+        }
+    }
+
     &__top-link {
         &:hover,
         &:focus,
