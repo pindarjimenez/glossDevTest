@@ -77,7 +77,7 @@ get_header();
                     <div class="col-sm-6 col-lg-3">
                         <div class="position-relative">
                             <figure>
-                                <?php the_post_thumbnail(); ?>
+                                <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-centered')); ?>
                             </figure>
                             <div class="text-center">
                                 <h5 class="mb-0">
