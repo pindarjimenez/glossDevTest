@@ -14,4 +14,7 @@
 - Username: `admin`
 - Password: `admin`
 
+## Screencast
+- https://www.loom.com/share/6f927a7afc024915bc77a3fcc6e288a6
+
 ## Creator: Pindar Jimenez
